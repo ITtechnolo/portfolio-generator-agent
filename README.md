@@ -1,30 +1,33 @@
-# Order Completion Agent
+# Portfolio Project Idea Generator Agent 🚀
 
-An AI-powered agent built with **LangGraph** and **Google Gemini** that handles product orders through a multi-turn conversation.
+An AI-powered agent built with **LangChain** and **Google Gemini** that generates curated, innovative, and practical portfolio project ideas based on your area of interest.
 
-## 🌟 Features
-- **Multi-turn Interaction**: Handles product availability checks followed by order placement.
-- **Stateful Management**: Uses LangGraph to maintain conversation stages (Checking vs. Ordering).
-- **Concise Replies**: Generates clear, professional confirmation messages (1-2 sentences).
-- **Robust Error Handling**: Includes fallback logic for API quota limits.
+## ✨ Features
+
+- **Personalized Recommendations:** Generates ideas tailored to your specific field (e.g., Data Science, NLP, Web Dev, AI).
+- **Innovative Concepts:** Focuses on beginner-to-intermediate friendly yet unique projects.
+- **Actionable Prompts:** Provides a starting prompt for each idea to help you begin building immediately.
+- **Structured Output:** Each suggestion includes a Title, a Statement of purpose, and a Building Prompt.
 
 ## 🛠️ Tech Stack
-- **Python**
-- **LangGraph** (State management)
-- **LangChain** (AI Orchestration)
-- **Google Generative AI (Gemini 2.0 Flash)**
+
+- **Language:** Python
+- **AI Framework:** [LangChain](https://www.langchain.com/)
+- **LLM:** [Google Gemini (Generative AI)](https://ai.google.dev/)
+- **Environment Management:** `python-dotenv`
 
 ## 🚀 Getting Started
 
-### 1. Prerequisites
-- Python 3.11+
-- A Google Gemini API Key
+### Prerequisites
+
+- Python 3.9+
+- A Google AI Studio API Key. Get one for free [here](https://aistudio.google.com/app/apikey).
 
 ### Installation
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/portfolio-generator-agent.git
+   git clone https://github.com/ITtechnolo/portfolio-generator-agent.git
    cd portfolio-generator-agent
    ```
 
@@ -33,23 +36,36 @@ An AI-powered agent built with **LangGraph** and **Google Gemini** that handles 
    pip install -r requirements.txt
    ```
 
-### 3. Configuration
-Create a `.env` file in the root directory and add your API key:
-```env
-GOOGLE_API_KEY=your_actual_api_key_here
-```
+3. **Set Up Environment Variables:**
+   - Create a `.env` file in the root directory:
+     ```bash
+     cp .env.example .env
+     ```
+   - Open `.env` and add your API key:
+     ```env
+     GOOGLE_API_KEY=your_actual_api_key_here
+     ```
 
-### 4. Usage
-Run the interactive agent:
+### Usage
+
+Run the agent and follow the interactive prompt:
+
 ```bash
 python main.py
 ```
 
-## 🎥 Example Flow
-1. **User**: "Do you have a Wireless Mouse?"
-2. **Agent**: "Yes, Wireless Mouse is available."
-3. **User**: "I want to order 2."
-4. **Agent**: "Order completed successfully. Thank you!"
+Example Input: `Natural Language Processing`
+
+## 📝 Example Output
+
+1. **Project Title:** AI Interview Prep Agent  
+   **Statement:** A smart AI agent that generates interview questions and answers based on job roles.  
+   **Prompt:** "Build an AI agent using LangChain that takes a job role as input and dynamically generates tailored interview questions with suggested answers."
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 ## 📄 License
-MIT
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
