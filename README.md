@@ -20,13 +20,18 @@ An AI-powered agent built with **LangGraph** and **Google Gemini** that handles 
 - Python 3.11+
 - A Google Gemini API Key
 
-### 2. Installation
-Clone the repository and install dependencies:
-```bash
-git clone https://github.com/ITtechnolo/portfolio-generator-agent.git
-cd portfolio-generator-agent
-pip install -r requirements.txt
-```
+### Installation
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/portfolio-generator-agent.git
+   cd portfolio-generator-agent
+   ```
+
+2. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ### 3. Configuration
 Create a `.env` file in the root directory and add your API key:
