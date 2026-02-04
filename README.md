@@ -23,6 +23,8 @@ An AI-powered agent built with **LangGraph** and **Google Gemini** that handles 
 ### 2. Installation
 Clone the repository and install dependencies:
 ```bash
+git clone https://github.com/ITtechnolo/portfolio-generator-agent.git
+cd portfolio-generator-agent
 pip install -r requirements.txt
 ```
 
